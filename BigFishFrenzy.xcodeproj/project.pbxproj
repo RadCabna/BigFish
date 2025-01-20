@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDC338522D3E9F9D006539AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338512D3E9F9D006539AC /* ViewController.swift */; };
+		DDC338542D3E9FE6006539AC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338532D3E9FE6006539AC /* Coordinator.swift */; };
+		DDC338562D3EA00B006539AC /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338552D3EA00B006539AC /* Loading.swift */; };
 		DDFD01162D3DA7770055FEE4 /* BigFishFrenzyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */; };
-		DDFD01182D3DA7770055FEE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD01172D3DA7770055FEE4 /* ContentView.swift */; };
 		DDFD011A2D3DA7780055FEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFD01192D3DA7780055FEE4 /* Assets.xcassets */; };
 		DDFD011E2D3DA7780055FEE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFD011D2D3DA7780055FEE4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDC338512D3E9F9D006539AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDC338532D3E9FE6006539AC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DDC338552D3EA00B006539AC /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		DDFD01122D3DA7770055FEE4 /* BigFishFrenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigFishFrenzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFishFrenzyApp.swift; sourceTree = "<group>"; };
-		DDFD01172D3DA7770055FEE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DDFD01192D3DA7780055FEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDFD011B2D3DA7780055FEE4 /* BigFishFrenzy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BigFishFrenzy.entitlements; sourceTree = "<group>"; };
 		DDFD011D2D3DA7780055FEE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -33,6 +37,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDC3384A2D3E9F25006539AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDC338552D3EA00B006539AC /* Loading.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDC3384B2D3E9F2C006539AC /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				DDC338512D3E9F9D006539AC /* ViewController.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		DDC3384C2D3E9F36006539AC /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		DDC3384D2D3E9F3D006539AC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DDC338532D3E9FE6006539AC /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DDC3384E2D3E9F45006539AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDC3384F2D3E9F4C006539AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DDC338502D3E9F55006539AC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		DDFD01092D3DA7770055FEE4 = {
 			isa = PBXGroup;
 			children = (
@@ -53,8 +109,14 @@
 			isa = PBXGroup;
 			children = (
 				DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */,
-				DDFD01172D3DA7770055FEE4 /* ContentView.swift */,
+				DDC3384A2D3E9F25006539AC /* Views */,
 				DDFD01192D3DA7780055FEE4 /* Assets.xcassets */,
+				DDC3384B2D3E9F2C006539AC /* SubViews */,
+				DDC3384C2D3E9F36006539AC /* Extentions */,
+				DDC3384D2D3E9F3D006539AC /* Coordinator */,
+				DDC3384E2D3E9F45006539AC /* Models */,
+				DDC338502D3E9F55006539AC /* Sounds */,
+				DDC3384F2D3E9F4C006539AC /* Fonts */,
 				DDFD011B2D3DA7780055FEE4 /* BigFishFrenzy.entitlements */,
 				DDFD011C2D3DA7780055FEE4 /* Preview Content */,
 			);
@@ -139,7 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDFD01182D3DA7770055FEE4 /* ContentView.swift in Sources */,
+				DDC338542D3E9FE6006539AC /* Coordinator.swift in Sources */,
+				DDC338522D3E9F9D006539AC /* ViewController.swift in Sources */,
+				DDC338562D3EA00B006539AC /* Loading.swift in Sources */,
 				DDFD01162D3DA7770055FEE4 /* BigFishFrenzyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +346,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -292,7 +355,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = f1.BigFishFrenzy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,9 +384,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -330,7 +393,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = f1.BigFishFrenzy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
