@@ -7,18 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD638BE82D3FEEA8005812B0 /* RammettoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD638BE72D3FEEA8005812B0 /* RammettoOne-Regular.ttf */; };
+		DD638BEB2D3FF003005812B0 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BEA2D3FF003005812B0 /* ColorExtention.swift */; };
+		DD638BEF2D3FFC6F005812B0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BEE2D3FFC6F005812B0 /* Menu.swift */; };
+		DD638BF12D40081F005812B0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BF02D40081F005812B0 /* Settings.swift */; };
+		DD638BF32D4013B6005812B0 /* Guidebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BF22D4013B6005812B0 /* Guidebook.swift */; };
+		DD638BF52D40172E005812B0 /* Madel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BF42D40172E005812B0 /* Madel.swift */; };
+		DD638BF72D403005005812B0 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BF62D403005005812B0 /* Shop.swift */; };
+		DD638BF92D406370005812B0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BF82D406370005812B0 /* Game.swift */; };
+		DD638BFB2D406A56005812B0 /* ShipAndFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BFA2D406A55005812B0 /* ShipAndFisher.swift */; };
 		DDC338522D3E9F9D006539AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338512D3E9F9D006539AC /* ViewController.swift */; };
 		DDC338542D3E9FE6006539AC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338532D3E9FE6006539AC /* Coordinator.swift */; };
 		DDC338562D3EA00B006539AC /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338552D3EA00B006539AC /* Loading.swift */; };
+		DDC338582D3EA43A006539AC /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338572D3EA43A006539AC /* Background.swift */; };
+		DDC3385A2D3EA51F006539AC /* SizeExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338592D3EA51F006539AC /* SizeExtention.swift */; };
 		DDFD01162D3DA7770055FEE4 /* BigFishFrenzyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */; };
 		DDFD011A2D3DA7780055FEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFD01192D3DA7780055FEE4 /* Assets.xcassets */; };
 		DDFD011E2D3DA7780055FEE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFD011D2D3DA7780055FEE4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD638BE72D3FEEA8005812B0 /* RammettoOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RammettoOne-Regular.ttf"; sourceTree = "<group>"; };
+		DD638BE92D3FEEC0005812B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DD638BEA2D3FF003005812B0 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
+		DD638BEE2D3FFC6F005812B0 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		DD638BF02D40081F005812B0 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		DD638BF22D4013B6005812B0 /* Guidebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidebook.swift; sourceTree = "<group>"; };
+		DD638BF42D40172E005812B0 /* Madel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Madel.swift; sourceTree = "<group>"; };
+		DD638BF62D403005005812B0 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		DD638BF82D406370005812B0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		DD638BFA2D406A55005812B0 /* ShipAndFisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipAndFisher.swift; sourceTree = "<group>"; };
 		DDC338512D3E9F9D006539AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDC338532D3E9FE6006539AC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DDC338552D3EA00B006539AC /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		DDC338572D3EA43A006539AC /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		DDC338592D3EA51F006539AC /* SizeExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeExtention.swift; sourceTree = "<group>"; };
 		DDFD01122D3DA7770055FEE4 /* BigFishFrenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigFishFrenzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFishFrenzyApp.swift; sourceTree = "<group>"; };
 		DDFD01192D3DA7780055FEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				DDC338552D3EA00B006539AC /* Loading.swift */,
+				DD638BEE2D3FFC6F005812B0 /* Menu.swift */,
+				DD638BF02D40081F005812B0 /* Settings.swift */,
+				DD638BF22D4013B6005812B0 /* Guidebook.swift */,
+				DD638BF62D403005005812B0 /* Shop.swift */,
+				DD638BF82D406370005812B0 /* Game.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -49,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				DDC338512D3E9F9D006539AC /* ViewController.swift */,
+				DDC338572D3EA43A006539AC /* Background.swift */,
+				DD638BFA2D406A55005812B0 /* ShipAndFisher.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -56,6 +86,8 @@
 		DDC3384C2D3E9F36006539AC /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				DDC338592D3EA51F006539AC /* SizeExtention.swift */,
+				DD638BEA2D3FF003005812B0 /* ColorExtention.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -71,6 +103,7 @@
 		DDC3384E2D3E9F45006539AC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DD638BF42D40172E005812B0 /* Madel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -78,6 +111,7 @@
 		DDC3384F2D3E9F4C006539AC /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				DD638BE72D3FEEA8005812B0 /* RammettoOne-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -108,9 +142,9 @@
 		DDFD01142D3DA7770055FEE4 /* BigFishFrenzy */ = {
 			isa = PBXGroup;
 			children = (
+				DD638BE92D3FEEC0005812B0 /* Info.plist */,
 				DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */,
 				DDC3384A2D3E9F25006539AC /* Views */,
-				DDFD01192D3DA7780055FEE4 /* Assets.xcassets */,
 				DDC3384B2D3E9F2C006539AC /* SubViews */,
 				DDC3384C2D3E9F36006539AC /* Extentions */,
 				DDC3384D2D3E9F3D006539AC /* Coordinator */,
@@ -119,6 +153,7 @@
 				DDC3384F2D3E9F4C006539AC /* Fonts */,
 				DDFD011B2D3DA7780055FEE4 /* BigFishFrenzy.entitlements */,
 				DDFD011C2D3DA7780055FEE4 /* Preview Content */,
+				DDFD01192D3DA7780055FEE4 /* Assets.xcassets */,
 			);
 			path = BigFishFrenzy;
 			sourceTree = "<group>";
@@ -190,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFD011E2D3DA7780055FEE4 /* Preview Assets.xcassets in Resources */,
+				DD638BE82D3FEEA8005812B0 /* RammettoOne-Regular.ttf in Resources */,
 				DDFD011A2D3DA7780055FEE4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,10 +237,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD638BF52D40172E005812B0 /* Madel.swift in Sources */,
 				DDC338542D3E9FE6006539AC /* Coordinator.swift in Sources */,
 				DDC338522D3E9F9D006539AC /* ViewController.swift in Sources */,
+				DD638BF92D406370005812B0 /* Game.swift in Sources */,
+				DD638BFB2D406A56005812B0 /* ShipAndFisher.swift in Sources */,
+				DD638BF72D403005005812B0 /* Shop.swift in Sources */,
+				DD638BEF2D3FFC6F005812B0 /* Menu.swift in Sources */,
+				DD638BF32D4013B6005812B0 /* Guidebook.swift in Sources */,
 				DDC338562D3EA00B006539AC /* Loading.swift in Sources */,
+				DDC3385A2D3EA51F006539AC /* SizeExtention.swift in Sources */,
 				DDFD01162D3DA7770055FEE4 /* BigFishFrenzyApp.swift in Sources */,
+				DD638BF12D40081F005812B0 /* Settings.swift in Sources */,
+				DDC338582D3EA43A006539AC /* Background.swift in Sources */,
+				DD638BEB2D3FF003005812B0 /* ColorExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +384,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BigFishFrenzy/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -376,6 +423,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BigFishFrenzy/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
