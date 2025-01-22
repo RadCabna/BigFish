@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Loading: View {
+    @EnvironmentObject var coordinator: Coordinator
+    @AppStorage("levelInfo") var level = false
     @State private var loadingProgress:CGFloat = -0.24
     @State private var hookOffsetY: CGFloat = 0
     @State private var fishRotation: CGFloat = 0
@@ -61,6 +63,16 @@ struct Loading: View {
             loadingBarAnimation()
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 hookAnimation()
+            }
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.7) {
+//                coordinator.navigate(to: .main)
+//            }
+        }
+        .onChange(of: level) { _ in
+            if level {
+                DispatchQueue.main.asyncAfter(deadline: .now()) {
+                    coordinator.navigate(to: .main)
+                }
             }
         }
     }

@@ -18,7 +18,28 @@ struct ShopItems {
     var itemName: String
 }
 
+struct Fish {
+    var fishName: String
+    var description: String
+    var rarity: String
+    var weight: Double
+}
+
 class Arrays {
+    
+    static var chanceToCatchAFish = [0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,6,7,7,8]
+    
+    static let fishArray: [Fish] = [
+        Fish(fishName: "Pebblefish", description: "A fish with grayish, pebble-like scales that blends perfectly with rocky riverbeds. Known for its calm demeanor.", rarity: "Common", weight: .random(in: 1...3)),
+        Fish(fishName: "Amberfin", description: "A golden-yellow fish often found in sunlit waters. Its fins sparkle faintly in bright light.", rarity: "Common", weight: .random(in: 1...2.5)),
+        Fish(fishName: "Ripplecarp", description: "A round fish with delicate patterns on its scales resembling ripples on water. Prefers slow-moving streams.", rarity: "Common", weight: .random(in: 2...4)),
+        Fish(fishName: "Starstripe", description: "A fish with silver stripes on a dark body that shimmer like stars in the night. Found in twilight waters.", rarity: "Rare", weight: .random(in: 4...8)),
+        Fish(fishName: "Frosttail", description: "A fish with icy-blue scales and a frosty-white tail, often seen in cooler regions or near glacial waters.", rarity: "Rare", weight: .random(in: 3...6)),
+        Fish(fishName: "Copperhead Pike", description: "A sleek fish with a coppery sheen on its head and body, known for its speed and agility. Found in clear rivers.", rarity: "Rare", weight: .random(in: 5...9)),
+        Fish(fishName: "Golden Leviathan", description: "A legendary fish with radiant golden scales that glow underwater. Said to bring prosperity to its captor.", rarity: "Mythical", weight: .random(in: 25...50)),
+        Fish(fishName: "Eclipse Ray", description: "A large, flat fish with a pattern resembling an eclipse on its back. Rarely seen, it emerges only during lunar eclipses.", rarity: "Mythical", weight: .random(in: 20...40)),
+        Fish(fishName: "Stormcaller Marlin", description: "A massive marlin with silver-blue scales that spark during storms. Fishermen say it controls the weather.", rarity: "Mythical", weight: .random(in: 30...60))
+    ]
     
     static let shopItemsCost = [1, 200, 500, 3500]
     

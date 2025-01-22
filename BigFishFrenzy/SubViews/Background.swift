@@ -13,6 +13,7 @@ struct Background: View {
         Image(isLoadingBG ? "bgLoading" : "bgGame")
             .resizable()
             .ignoresSafeArea()
+            
     }
 }
 

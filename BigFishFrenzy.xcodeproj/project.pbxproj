@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2624F72D41685500DF5EE3 /* CatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2624F62D41685500DF5EE3 /* CatchView.swift */; };
+		DD2624F92D41769400DF5EE3 /* TrophyRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2624F82D41769400DF5EE3 /* TrophyRoom.swift */; };
 		DD638BE82D3FEEA8005812B0 /* RammettoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD638BE72D3FEEA8005812B0 /* RammettoOne-Regular.ttf */; };
 		DD638BEB2D3FF003005812B0 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BEA2D3FF003005812B0 /* ColorExtention.swift */; };
 		DD638BEF2D3FFC6F005812B0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BEE2D3FFC6F005812B0 /* Menu.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD2624F62D41685500DF5EE3 /* CatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchView.swift; sourceTree = "<group>"; };
+		DD2624F82D41769400DF5EE3 /* TrophyRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyRoom.swift; sourceTree = "<group>"; };
 		DD638BE72D3FEEA8005812B0 /* RammettoOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RammettoOne-Regular.ttf"; sourceTree = "<group>"; };
 		DD638BE92D3FEEC0005812B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DD638BEA2D3FF003005812B0 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 				DD638BF22D4013B6005812B0 /* Guidebook.swift */,
 				DD638BF62D403005005812B0 /* Shop.swift */,
 				DD638BF82D406370005812B0 /* Game.swift */,
+				DD2624F82D41769400DF5EE3 /* TrophyRoom.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 				DDC338512D3E9F9D006539AC /* ViewController.swift */,
 				DDC338572D3EA43A006539AC /* Background.swift */,
 				DD638BFA2D406A55005812B0 /* ShipAndFisher.swift */,
+				DD2624F62D41685500DF5EE3 /* CatchView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2624F72D41685500DF5EE3 /* CatchView.swift in Sources */,
 				DD638BF52D40172E005812B0 /* Madel.swift in Sources */,
 				DDC338542D3E9FE6006539AC /* Coordinator.swift in Sources */,
 				DDC338522D3E9F9D006539AC /* ViewController.swift in Sources */,
@@ -250,6 +257,7 @@
 				DDFD01162D3DA7770055FEE4 /* BigFishFrenzyApp.swift in Sources */,
 				DD638BF12D40081F005812B0 /* Settings.swift in Sources */,
 				DDC338582D3EA43A006539AC /* Background.swift in Sources */,
+				DD2624F92D41769400DF5EE3 /* TrophyRoom.swift in Sources */,
 				DD638BEB2D3FF003005812B0 /* ColorExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

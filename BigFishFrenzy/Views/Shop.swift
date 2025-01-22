@@ -11,7 +11,7 @@ struct Shop: View {
     @EnvironmentObject var coordinator: Coordinator
     @AppStorage("coinCount") var coinCount = 0
     @State private var alreadyBoughtItemsArray = UserDefaults.standard.array(forKey: "alreadyBoughtItemsArray") as? [[Int]] ?? Arrays.defaultShopItemsData
-    @State private var selectedShopItemsArray = UserDefaults.standard.array(forKey: "defaultShopItemsData") as? [Int] ?? [0,0,0]
+    @State private var selectedShopItemsArray = UserDefaults.standard.array(forKey: "selectedShopItemsArray") as? [Int] ?? [0,0,0]
     @State private var shopItemsArray = Arrays.shopItemsArray
     @State private var shopItemsCost = Arrays.shopItemsCost
     @State private var shopPack = 0
@@ -35,12 +35,13 @@ struct Shop: View {
                 .shadow(color: .textshadow, radius: 2)
                 .frame(maxHeight: .infinity, alignment: .top)
                 .padding(.top)
-//                .onTapGesture {
-//                    UserDefaults.standard.removeObject(forKey: "alreadyBoughtItemsArray")
-//                    UserDefaults.standard.removeObject(forKey: "defaultShopItemsData")
-//                    coinCount = 0
-//                    UserDefaults.standard.removeObject(forKey: "defaultShopItemsData")
-//                }
+                .onTapGesture {
+                    UserDefaults.standard.removeObject(forKey: "alreadyBoughtItemsArray")
+                    UserDefaults.standard.removeObject(forKey: "defaultShopItemsData")
+                    coinCount = 0
+                    UserDefaults.standard.removeObject(forKey: "defaultShopItemsData")
+                    UserDefaults.standard.removeObject(forKey: "catchFishArray")
+                }
             Image("coinFrame")
                 .resizable()
                 .scaledToFit()
@@ -111,6 +112,9 @@ struct Shop: View {
                                         .shadow(color: .textshadow, radius: 2)
                                         .shadow(color: .textshadow, radius: 2)
                                 )
+                                .onTapGesture {
+                                    selectShopItem(id: id)
+                                }
                         }
                     } else {
                         VStack {

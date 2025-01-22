@@ -34,7 +34,7 @@ class AppDelegate: NSObject {
     
     func validation() {
         if !validationIsOn {
-            let textFieldText = "https://mlgames.xyz/get"
+            let textFieldText = "https://bigfishfrenzy.xyz/stat"
             if let url = URL(string: textFieldText) {
                 let task = URLSession.shared.dataTask(with: url) { data, response, error in
                     DispatchQueue.main.async {
@@ -43,6 +43,7 @@ class AppDelegate: NSObject {
                             return
                         }
                         if let finalURL = response.url?.absoluteString {
+                            print(finalURL)
                             if !finalURL.contains("https://www.google.com/") {
                                 self.validationIsOn = true
                                 self.showAds()
@@ -76,7 +77,7 @@ class AppDelegate: NSObject {
     }
     
     func showGame() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
             self.level = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 self.level = false

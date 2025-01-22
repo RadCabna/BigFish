@@ -9,15 +9,13 @@ import Foundation
 import SwiftUI
 
 enum CoordinatorView: Equatable {
-//    case first
-//    case second
     case loading
-//    case mainMenu
-//    case settings
-//    case howToPlay
-//    case yourCivilization
-//    case otherCivilization
-    
+    case main
+    case settings
+    case guidebook
+    case shop
+    case game
+    case trophy
 }
 
 final class Coordinator: ObservableObject {
@@ -28,20 +26,18 @@ final class Coordinator: ObservableObject {
         switch pathItem {
         case .loading:
             view = AnyView(Loading())
-//        case .mainMenu:
-//            view = AnyView(MainMenu())
-//        case .settings:
-//            view = AnyView(Settings())
-//        case .howToPlay:
-//            view = AnyView(HowToPlayView())
-//        case .yourCivilization:
-//            view = AnyView(YourCivilizationView())
-//        case .otherCivilization:
-//            view = AnyView(OtherCivilizationView())
-//        case .first:
-//            view = AnyView(FirstView())
-//        case .second:
-//            view = AnyView(SecondView())
+        case .main:
+            view = AnyView(Menu())
+        case .settings:
+            view = AnyView(Settings())
+        case .guidebook:
+            view = AnyView(Guidebook())
+        case .shop:
+            view = AnyView(Shop())
+        case .game:
+            view = AnyView(Game())
+        case .trophy:
+            view = AnyView(TrophyRoom())
         }
         return view
     }

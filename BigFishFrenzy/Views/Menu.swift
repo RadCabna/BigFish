@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Menu: View {
+    @EnvironmentObject var coordinator: Coordinator
     @AppStorage("coinCount") var coinCount = 100
     var body: some View {
         ZStack {
@@ -30,25 +31,40 @@ struct Menu: View {
                         .resizable()
                         .scaledToFit()
                         .frame(height: screenHeight*0.2)
+                        .onTapGesture {
+                            coordinator.navigate(to: .game)
+                        }
                     Image("trophyButton")
                         .resizable()
                         .scaledToFit()
                         .frame(height: screenHeight*0.2)
+                        .onTapGesture {
+                            coordinator.navigate(to: .trophy)
+                        }
                 }
                 HStack(spacing: screenWidth*0.02) {
                     Image("shopButton")
                         .resizable()
                         .scaledToFit()
                         .frame(height: screenHeight*0.2)
+                        .onTapGesture {
+                            coordinator.navigate(to: .shop)
+                        }
                     Image("guideButton")
                         .resizable()
                         .scaledToFit()
                         .frame(height: screenHeight*0.2)
+                        .onTapGesture {
+                            coordinator.navigate(to: .guidebook)
+                        }
                 }
                 Image("settingsButton")
                     .resizable()
                     .scaledToFit()
                     .frame(height: screenHeight*0.2)
+                    .onTapGesture {
+                        coordinator.navigate(to: .settings)
+                    }
             }
         }
         .onAppear {
