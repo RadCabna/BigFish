@@ -18,7 +18,7 @@ struct Settings: View {
             Image("homeButton")
                 .resizable()
                 .scaledToFit()
-                .frame(height: screenHeight*0.2)
+                .frame(height: screenHeight*0.15)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 .padding(.top)
                 .onTapGesture {
@@ -92,6 +92,14 @@ struct Settings: View {
         }
         .onAppear {
             AppDelegate().setOrientation(to: .landscapeLeft)
+        }
+        .onChange(of: music) { _ in
+            if music {
+                SoundManager.instance.stopAllSounds()
+                SoundManager.instance.playSound(sound: "mainSound")
+            } else {
+                SoundManager.instance.stopAllSounds()
+            }
         }
     }
     

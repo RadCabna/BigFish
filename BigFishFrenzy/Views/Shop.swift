@@ -10,6 +10,7 @@ import SwiftUI
 struct Shop: View {
     @EnvironmentObject var coordinator: Coordinator
     @AppStorage("coinCount") var coinCount = 0
+    @AppStorage("sound") private var sound = true
     @State private var alreadyBoughtItemsArray = UserDefaults.standard.array(forKey: "alreadyBoughtItemsArray") as? [[Int]] ?? Arrays.defaultShopItemsData
     @State private var selectedShopItemsArray = UserDefaults.standard.array(forKey: "selectedShopItemsArray") as? [Int] ?? [0,0,0]
     @State private var shopItemsArray = Arrays.shopItemsArray
@@ -192,6 +193,9 @@ struct Shop: View {
     
     func buyShopItem(id: Int) {
         if coinCount >= shopItemsCost[id] {
+            if sound {
+                SoundManager.instance.playSound(sound: "buySound")
+            }
             coinCount -= shopItemsCost[id]
             alreadyBoughtItemsArray[shopPack][id] = 1
             UserDefaults.standard.setValue(alreadyBoughtItemsArray, forKey: "alreadyBoughtItemsArray")

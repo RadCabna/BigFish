@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Menu: View {
+    @AppStorage("music") private var music = true
     @EnvironmentObject var coordinator: Coordinator
     @AppStorage("coinCount") var coinCount = 100
     var body: some View {
@@ -69,6 +70,9 @@ struct Menu: View {
         }
         .onAppear {
             AppDelegate().setOrientation(to: .landscapeLeft)
+            if music {
+                SoundManager.instance.playSound(sound: "mainSound")
+            }
         }
     }
 }

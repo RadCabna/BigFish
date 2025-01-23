@@ -23,6 +23,16 @@
 		DDC338562D3EA00B006539AC /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338552D3EA00B006539AC /* Loading.swift */; };
 		DDC338582D3EA43A006539AC /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338572D3EA43A006539AC /* Background.swift */; };
 		DDC3385A2D3EA51F006539AC /* SizeExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338592D3EA51F006539AC /* SizeExtention.swift */; };
+		DDEE64622D41C674000F1CA6 /* levelDoneSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64612D41C674000F1CA6 /* levelDoneSound.mp3 */; };
+		DDEE64642D41C69A000F1CA6 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE64632D41C69A000F1CA6 /* SoundManager.swift */; };
+		DDEE646C2D41C74A000F1CA6 /* rollSound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64652D41C74A000F1CA6 /* rollSound4.mp3 */; };
+		DDEE646D2D41C74A000F1CA6 /* rollSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64662D41C74A000F1CA6 /* rollSound2.mp3 */; };
+		DDEE646E2D41C74A000F1CA6 /* rollSound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64672D41C74A000F1CA6 /* rollSound3.mp3 */; };
+		DDEE646F2D41C74A000F1CA6 /* dropSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64682D41C74A000F1CA6 /* dropSound.mp3 */; };
+		DDEE64702D41C74A000F1CA6 /* rollSound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64692D41C74A000F1CA6 /* rollSound1.mp3 */; };
+		DDEE64712D41C74A000F1CA6 /* mainSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE646A2D41C74A000F1CA6 /* mainSound.mp3 */; };
+		DDEE64742D41CC81000F1CA6 /* failSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64732D41CC81000F1CA6 /* failSound.mp3 */; };
+		DDEE64762D41D164000F1CA6 /* buySound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64752D41D164000F1CA6 /* buySound.mp3 */; };
 		DDFD01162D3DA7770055FEE4 /* BigFishFrenzyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */; };
 		DDFD011A2D3DA7780055FEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFD01192D3DA7780055FEE4 /* Assets.xcassets */; };
 		DDFD011E2D3DA7780055FEE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFD011D2D3DA7780055FEE4 /* Preview Assets.xcassets */; };
@@ -46,6 +56,16 @@
 		DDC338552D3EA00B006539AC /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		DDC338572D3EA43A006539AC /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		DDC338592D3EA51F006539AC /* SizeExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeExtention.swift; sourceTree = "<group>"; };
+		DDEE64612D41C674000F1CA6 /* levelDoneSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelDoneSound.mp3; sourceTree = "<group>"; };
+		DDEE64632D41C69A000F1CA6 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		DDEE64652D41C74A000F1CA6 /* rollSound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollSound4.mp3; sourceTree = "<group>"; };
+		DDEE64662D41C74A000F1CA6 /* rollSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollSound2.mp3; sourceTree = "<group>"; };
+		DDEE64672D41C74A000F1CA6 /* rollSound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollSound3.mp3; sourceTree = "<group>"; };
+		DDEE64682D41C74A000F1CA6 /* dropSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dropSound.mp3; sourceTree = "<group>"; };
+		DDEE64692D41C74A000F1CA6 /* rollSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollSound1.mp3; sourceTree = "<group>"; };
+		DDEE646A2D41C74A000F1CA6 /* mainSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainSound.mp3; sourceTree = "<group>"; };
+		DDEE64732D41CC81000F1CA6 /* failSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = failSound.mp3; sourceTree = "<group>"; };
+		DDEE64752D41D164000F1CA6 /* buySound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buySound.mp3; sourceTree = "<group>"; };
 		DDFD01122D3DA7770055FEE4 /* BigFishFrenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigFishFrenzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFishFrenzyApp.swift; sourceTree = "<group>"; };
 		DDFD01192D3DA7780055FEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +145,16 @@
 		DDC338502D3E9F55006539AC /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				DDEE64752D41D164000F1CA6 /* buySound.mp3 */,
+				DDEE64732D41CC81000F1CA6 /* failSound.mp3 */,
+				DDEE64682D41C74A000F1CA6 /* dropSound.mp3 */,
+				DDEE646A2D41C74A000F1CA6 /* mainSound.mp3 */,
+				DDEE64692D41C74A000F1CA6 /* rollSound1.mp3 */,
+				DDEE64662D41C74A000F1CA6 /* rollSound2.mp3 */,
+				DDEE64672D41C74A000F1CA6 /* rollSound3.mp3 */,
+				DDEE64652D41C74A000F1CA6 /* rollSound4.mp3 */,
+				DDEE64612D41C674000F1CA6 /* levelDoneSound.mp3 */,
+				DDEE64632D41C69A000F1CA6 /* SoundManager.swift */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -230,9 +260,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDEE646E2D41C74A000F1CA6 /* rollSound3.mp3 in Resources */,
+				DDEE64742D41CC81000F1CA6 /* failSound.mp3 in Resources */,
+				DDEE646F2D41C74A000F1CA6 /* dropSound.mp3 in Resources */,
+				DDEE646D2D41C74A000F1CA6 /* rollSound2.mp3 in Resources */,
+				DDEE646C2D41C74A000F1CA6 /* rollSound4.mp3 in Resources */,
 				DDFD011E2D3DA7780055FEE4 /* Preview Assets.xcassets in Resources */,
+				DDEE64712D41C74A000F1CA6 /* mainSound.mp3 in Resources */,
 				DD638BE82D3FEEA8005812B0 /* RammettoOne-Regular.ttf in Resources */,
 				DDFD011A2D3DA7780055FEE4 /* Assets.xcassets in Resources */,
+				DDEE64702D41C74A000F1CA6 /* rollSound1.mp3 in Resources */,
+				DDEE64622D41C674000F1CA6 /* levelDoneSound.mp3 in Resources */,
+				DDEE64762D41D164000F1CA6 /* buySound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +298,7 @@
 				DDC338582D3EA43A006539AC /* Background.swift in Sources */,
 				DD2624F92D41769400DF5EE3 /* TrophyRoom.swift in Sources */,
 				DD638BEB2D3FF003005812B0 /* ColorExtention.swift in Sources */,
+				DDEE64642D41C69A000F1CA6 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Game: View {
     @EnvironmentObject var coordinator: Coordinator
+    @AppStorage("sound") private var sound = true
+    @AppStorage("vibration") private var vibration = true
     @AppStorage("coinCount") var coinCount = 0
     @State private var selectedShopItemsArray = UserDefaults.standard.array(forKey: "selectedShopItemsArray") as? [Int] ?? [0,0,0]
     @State private var shopItemsArray = Arrays.shopItemsArray
@@ -21,6 +23,7 @@ struct Game: View {
     @State private var gameStage = 0
     @State private var showYourCatch = false
     @State private var canWeTap = true
+    let soundArray = ["rollSound1","rollSound2","rollSound3","rollSound4"]
     var body: some View {
         ZStack {
             Background(isLoadingBG: false)
@@ -62,6 +65,9 @@ struct Game: View {
                         withAnimation() {
                             gameStage = 1
                         }
+                        if sound {
+                            SoundManager.instance.playSound(sound: "dropSound")
+                        }
                         floatInTheWater = true
                         startTimer()
                         floatYOffset = 0.5
@@ -89,7 +95,16 @@ struct Game: View {
                                 withAnimation() {
                                     gameStage = 2
                                 }
+                                if sound {
+                                    SoundManager.instance.playSound(sound: soundArray.randomElement() ?? "rollSound1")
+                                }
                             } else {
+                                if vibration {
+                                    generateImpactFeedback(style: .heavy)
+                                }
+                                if sound {
+                                    SoundManager.instance.playSound(sound: "failSound")
+                                }
                                 stopTimer()
                                 withAnimation() {
                                     gameStage = 0
@@ -127,7 +142,16 @@ struct Game: View {
                                 withAnimation() {
                                     gameStage = 3
                                 }
+                                if sound {
+                                    SoundManager.instance.playSound(sound: soundArray.randomElement() ?? "rollSound1")
+                                }
                             } else {
+                                if vibration {
+                                    generateImpactFeedback(style: .heavy)
+                                }
+                                if sound {
+                                    SoundManager.instance.playSound(sound: "failSound")
+                                }
                                 stopTimer()
                                 withAnimation() {
                                     gameStage = 0
@@ -165,9 +189,18 @@ struct Game: View {
                                 withAnimation() {
                                     gameStage = 4
                                 }
+                                if sound {
+                                    SoundManager.instance.playSound(sound: soundArray.randomElement() ?? "rollSound1")
+                                }
                                 startTimer2()
                                 floatWobling()
                             } else {
+                                if vibration {
+                                    generateImpactFeedback(style: .heavy)
+                                }
+                                if sound {
+                                    SoundManager.instance.playSound(sound: "failSound")
+                                }
                                 stopTimer()
                                 withAnimation() {
                                     gameStage = 0
@@ -217,6 +250,9 @@ struct Game: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
                 .onTapGesture {
+                    if vibration {
+                        generateImpactFeedback(style: .light)
+                    }
                     withAnimation() {
                         floatYOffset -= 0.02
                     }
@@ -233,6 +269,12 @@ struct Game: View {
                 stopTimer2()
                 showYourCatch = true
             } else if floatYOffset >= 1.2 {
+                if vibration {
+                    generateImpactFeedback(style: .heavy)
+                }
+                if sound {
+                    SoundManager.instance.playSound(sound: "failSound")
+                }
                 stopTimer()
                 stopTimer2()
                 floatYOffset = 0.5
@@ -263,6 +305,14 @@ struct Game: View {
     
     func whatShip() -> String {
         return shopItemsArray[0][3]
+    }
+    
+    func generateImpactFeedback(style: UIImpactFeedbackGenerator.FeedbackStyle) {
+        let generator = UIImpactFeedbackGenerator(style: style)
+        if vibration {
+            generator.prepare()
+            generator.impactOccurred()
+        }
     }
     
     func startTimer() {

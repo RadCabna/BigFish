@@ -10,6 +10,7 @@ import SwiftUI
 struct TrophyRoom: View {
     @EnvironmentObject var coordinator: Coordinator
     @AppStorage("coinCount") var coinCount = 0
+    @AppStorage("sound") private var sound = true
     @State private var catchFishArray = UserDefaults.standard.array(forKey: "catchFishArray") as? [[String]] ?? []
     @State private var trophyNumber = 0
     @State private var trophyOffset: CGFloat = 0
@@ -164,6 +165,9 @@ struct TrophyRoom: View {
         catchFishArray.remove(at: trophyNumber)
         UserDefaults.standard.setValue(catchFishArray, forKey: "catchFishArray")
         trophyNumber = catchFishArray.count - 1
+        if sound {
+            SoundManager.instance.playSound(sound: "buySound")
+        }
     }
     
     func changeTrophyAnimation(direction: Int) {

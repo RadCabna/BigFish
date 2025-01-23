@@ -18,55 +18,110 @@ struct Loading: View {
     @State private var loadingOpacity: CGFloat = 1
     var body: some View {
         ZStack {
+            GeometryReader { geometry in
+                let height = geometry.size.height
+                let width = geometry.size.width
+                let isLandscape = width > height
+                if isLandscape {
            Background(isLoadingBG: true)
+                        .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
             VStack {
                 Spacer()
                 Image("loadingFish")
                     .resizable()
                     .scaledToFit()
-                    .frame(height: screenHeight*0.3)
+                    .frame(height: height*0.3)
                     .rotationEffect(Angle(degrees: fishRotation))
                     .offset(x:fishOffsetX, y:fishOffsetY)
                     
                 Text("LOADING...")
-                    .font(Font.custom("RammettoOne-Regular", size: screenHeight*0.06))
+                    .font(Font.custom("RammettoOne-Regular", size: height*0.06))
                     .foregroundColor(.textcolor)
                     .shadow(color: .textshadow, radius: 2)
                     .shadow(color: .textshadow, radius: 2)
                 Image("loadingBarBack")
                     .resizable()
                     .scaledToFit()
-                    .frame(height: screenHeight*0.05)
+                    .frame(height: height*0.05)
                     .overlay(
                         Image("loadingBarFront")
                             .resizable()
                             .scaledToFit()
-                            .frame(height: screenHeight*0.05)
-                            .offset(x: screenWidth*loadingProgress)
+                            .frame(height: height*0.05)
+                            .offset(x: width*loadingProgress)
                             .mask(
                                 Image("loadingBarBack")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(height: screenHeight*0.05)
+                                    .frame(height: height*0.05)
                             )
                     )
             }
             .opacity(loadingOpacity)
+            .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
             Image("loadingHookLine")
                 .resizable()
                 .scaledToFit()
-                .frame(height: screenHeight*0.8)
-                .offset(x: screenWidth*0.05, y: hookOffsetY)
+                .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                .frame(height: height*0.8)
+                .offset(x: width*0.05, y: hookOffsetY)
+                } else {
+                    Background(isLoadingBG: true)
+                        .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                     VStack {
+//                         Spacer()
+                         Image("loadingFish")
+                             .resizable()
+                             .scaledToFit()
+                             .frame(height: width*0.3)
+                             .rotationEffect(Angle(degrees: fishRotation))
+                             .offset(x:fishOffsetX, y:fishOffsetY)
+                             
+                         Text("LOADING...")
+                             .font(Font.custom("RammettoOne-Regular", size: width*0.06))
+                             .foregroundColor(.textcolor)
+                             .shadow(color: .textshadow, radius: 2)
+                             .shadow(color: .textshadow, radius: 2)
+                         Image("loadingBarBack")
+                             .resizable()
+                             .scaledToFit()
+                             .frame(height: width*0.05)
+                             .overlay(
+                                 Image("loadingBarFront")
+                                     .resizable()
+                                     .scaledToFit()
+                                     .frame(height: width*0.05)
+                                     .offset(x: width*loadingProgress)
+                                     .mask(
+                                         Image("loadingBarBack")
+                                             .resizable()
+                                             .scaledToFit()
+                                             .frame(height: width*0.05)
+                                     )
+                             )
+                     }
+                     .rotationEffect(Angle(degrees: -90))
+                     .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                     .opacity(loadingOpacity)
+                     Image("loadingHookLine")
+                         .resizable()
+                         .scaledToFit()
+                         .frame(height: width*0.8)
+                         .offset(x: height*0.05, y: hookOffsetY+width*0.185)
+                         .rotationEffect(Angle(degrees: -90))
+                         .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                }
+            }
         }
         .onAppear{
-            AppDelegate().setOrientation(to: .landscapeLeft)
+//            AppDelegate().setOrientation(to: .landscapeLeft)
             loadingBarAnimation()
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 hookAnimation()
             }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.7) {
-//                coordinator.navigate(to: .main)
-//            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.7) {
+                coordinator.navigate(to: .main)
+            }
         }
         .onChange(of: level) { _ in
             if level {

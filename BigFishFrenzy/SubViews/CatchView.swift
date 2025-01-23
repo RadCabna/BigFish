@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CatchView: View {
+    @AppStorage("sound") private var sound = true
     @EnvironmentObject var coordinator: Coordinator
     @State private var fishArray = Arrays.fishArray
     @State private var catchFishArray = UserDefaults.standard.array(forKey: "catchFishArray") as? [[String]] ?? []
@@ -32,7 +33,7 @@ struct CatchView: View {
             Image("nextButton")
                 .resizable()
                 .scaledToFit()
-                .frame(height: screenHeight*0.15)
+                .frame(height: screenHeight*0.13)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
                 .padding(.bottom)
                 .onTapGesture {
@@ -65,7 +66,7 @@ struct CatchView: View {
                     Image("weightFrame")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: screenHeight*0.25)
+                        .frame(height: screenHeight*0.23)
                         .overlay(
                             VStack {
                                 Text("PARITY")
@@ -84,7 +85,7 @@ struct CatchView: View {
                     Image("weightFrame")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: screenHeight*0.25)
+                        .frame(height: screenHeight*0.23)
                         .overlay(
                             VStack {
                                 Text("WEIGHT")
@@ -107,6 +108,9 @@ struct CatchView: View {
         .onAppear {
             AppDelegate().setOrientation(to: .landscapeLeft)
             whatFishYouCatch()
+            if sound {
+                SoundManager.instance.playSound(sound: "levelDoneSound")
+            }
         }
     }
     
