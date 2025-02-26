@@ -20,7 +20,9 @@ struct Game: View {
     @State private var rectangleRotationAngle: CGFloat = 0
     @State private var timer1: Timer?
     @State private var timer2: Timer?
+    @State private var piratesTimer: Timer?
     @State private var gameStage = 0
+    @State private var piratesComing = false
     @State private var showYourCatch = false
     @State private var canWeTap = true
     let soundArray = ["rollSound1","rollSound2","rollSound3","rollSound4"]
@@ -50,6 +52,9 @@ struct Game: View {
                 )
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                 .padding(.top)
+                .onTapGesture {
+                    gameStage = 5
+                }
             ShipAndFisher(shipNumber: selectedShopItemsArray[0],canWeTap: canWeTap, floatInTheWater: $floatInTheWater)
             
                 .onTapGesture {
@@ -258,11 +263,34 @@ struct Game: View {
                     }
                 }
             }
+            if gameStage == 5 {
+                PiratesComing(piratecIsComing: $piratesComing, gameStage: $gameStage)
+            }
+            if gameStage == 6 {
+                TicTacToe(gameStage: $gameStage)
+                    .offset(y: screenHeight*0.06)
+            }
+            if gameStage == 7 {
+                RPS(gameStage: $gameStage)
+                    .offset(y: screenHeight*0.13)
+            }
+            if gameStage == 8 {
+                CoinGame(gameStage: $gameStage)
+                    .offset(y: screenHeight*0.13)
+            }
+            if gameStage == 9 {
+                YouWinPirates(gameStage: $gameStage)
+            }
+            if gameStage == 10 {
+                PiratesWin(gameStage: $gameStage)
+            }
         }
         .onAppear {
             AppDelegate().setOrientation(to: .landscapeLeft)
             floatWobling()
-//            startTimer2()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                startPiratesTimer()
+            }
         }
         .onChange(of: floatYOffset) { _ in
             if floatYOffset <= 0 {
@@ -312,6 +340,13 @@ struct Game: View {
         if vibration {
             generator.prepare()
             generator.impactOccurred()
+        }
+    }
+    
+    func startPiratesTimer() {
+        gameStage = 5
+        piratesTimer = Timer.scheduledTimer(withTimeInterval: 600, repeats: true) { _ in
+           gameStage = 5
         }
     }
     

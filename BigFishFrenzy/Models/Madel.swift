@@ -18,6 +18,12 @@ struct ShopItems {
     var itemName: String
 }
 
+struct TicTacItem: Equatable {
+    var name: String
+    var active = false
+    var yourItem = false
+}
+
 struct Fish {
     var fishName: String
     var description: String
@@ -26,6 +32,12 @@ struct Fish {
 }
 
 class Arrays {
+    
+    static var ticTacArray: [[TicTacItem]] = [
+    [TicTacItem(name: "50cage"),TicTacItem(name: "50cage"),TicTacItem(name: "50cage")],
+    [TicTacItem(name: "50cage"),TicTacItem(name: "50cage"),TicTacItem(name: "50cage")],
+    [TicTacItem(name: "50cage"),TicTacItem(name: "50cage"),TicTacItem(name: "50cage")]
+    ]
     
     static var chanceToCatchAFish = [0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,6,7,7,8]
     

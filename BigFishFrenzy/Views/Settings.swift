@@ -96,7 +96,7 @@ struct Settings: View {
         .onChange(of: music) { _ in
             if music {
                 SoundManager.instance.stopAllSounds()
-                SoundManager.instance.playSound(sound: "mainSound")
+                SoundManager.instance.playSound(sound: "mainMusic")
             } else {
                 SoundManager.instance.stopAllSounds()
             }

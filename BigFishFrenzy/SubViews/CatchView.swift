@@ -16,7 +16,6 @@ struct CatchView: View {
     @State private var chance = Arrays.chanceToCatchAFish
     @State private var fishNumber = 0
     @Binding var showYourCatch: Bool
-//    ["NAME", "20", "1", "A legendary fish with radiant golden scales that glow underwater. Said to bring prosperity to its captor."]
     var body: some View {
         ZStack {
             Background(isLoadingBG: false).blur(radius: 5).scaleEffect(x: 1.1, y:1.1).ignoresSafeArea()
@@ -109,7 +108,7 @@ struct CatchView: View {
             AppDelegate().setOrientation(to: .landscapeLeft)
             whatFishYouCatch()
             if sound {
-                SoundManager.instance.playSound(sound: "levelDoneSound")
+                SoundManager.instance.playSound(sound: "levelDone")
             }
         }
     }

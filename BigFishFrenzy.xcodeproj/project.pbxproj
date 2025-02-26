@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DD2624F72D41685500DF5EE3 /* CatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2624F62D41685500DF5EE3 /* CatchView.swift */; };
 		DD2624F92D41769400DF5EE3 /* TrophyRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2624F82D41769400DF5EE3 /* TrophyRoom.swift */; };
+		DD582D4E2D42C7C60026E1D7 /* levelDone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD582D4D2D42C7C60026E1D7 /* levelDone.mp3 */; };
+		DD582D502D42C8740026E1D7 /* mainMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD582D4F2D42C8740026E1D7 /* mainMusic.mp3 */; };
+		DD582D522D42C8B30026E1D7 /* lineBrokeSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD582D512D42C8B30026E1D7 /* lineBrokeSound.mp3 */; };
 		DD638BE82D3FEEA8005812B0 /* RammettoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD638BE72D3FEEA8005812B0 /* RammettoOne-Regular.ttf */; };
 		DD638BEB2D3FF003005812B0 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BEA2D3FF003005812B0 /* ColorExtention.swift */; };
 		DD638BEF2D3FFC6F005812B0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BEE2D3FFC6F005812B0 /* Menu.swift */; };
@@ -18,20 +21,31 @@
 		DD638BF72D403005005812B0 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BF62D403005005812B0 /* Shop.swift */; };
 		DD638BF92D406370005812B0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BF82D406370005812B0 /* Game.swift */; };
 		DD638BFB2D406A56005812B0 /* ShipAndFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD638BFA2D406A55005812B0 /* ShipAndFisher.swift */; };
+		DDBD7FA92D6F3F88006C0F43 /* Pirates coming.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD7FA82D6F3F88006C0F43 /* Pirates coming.swift */; };
+		DDBD7FAB2D6F4507006C0F43 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD7FAA2D6F4507006C0F43 /* TicTacToe.swift */; };
+		DDBD7FAD2D6F5633006C0F43 /* YouWinPirates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD7FAC2D6F5633006C0F43 /* YouWinPirates.swift */; };
+		DDBD7FAF2D6F5BAB006C0F43 /* RPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD7FAE2D6F5BAB006C0F43 /* RPS.swift */; };
+		DDBD7FB12D6F62BE006C0F43 /* PiratesWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD7FB02D6F62BE006C0F43 /* PiratesWin.swift */; };
+		DDBD7FB32D6F6928006C0F43 /* CoinGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD7FB22D6F6928006C0F43 /* CoinGame.swift */; };
+		DDBD7FB52D6F7151006C0F43 /* piratesSound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDBD7FB42D6F7151006C0F43 /* piratesSound1.mp3 */; };
+		DDBD7FB82D6F715B006C0F43 /* piratesLostSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDBD7FB62D6F715B006C0F43 /* piratesLostSound.mp3 */; };
+		DDBD7FB92D6F715B006C0F43 /* piratesWinSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDBD7FB72D6F715B006C0F43 /* piratesWinSound.mp3 */; };
+		DDBD7FBE2D6F721F006C0F43 /* xoSound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDBD7FBA2D6F721F006C0F43 /* xoSound1.mp3 */; };
+		DDBD7FC02D6F721F006C0F43 /* xoSound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDBD7FBC2D6F721F006C0F43 /* xoSound3.mp3 */; };
+		DDBD7FC12D6F721F006C0F43 /* xoSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDBD7FBD2D6F721F006C0F43 /* xoSound2.mp3 */; };
+		DDBD7FC42D6F746D006C0F43 /* coinSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDBD7FC22D6F746D006C0F43 /* coinSound.mp3 */; };
+		DDBD7FC52D6F746D006C0F43 /* choseCoinSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDBD7FC32D6F746D006C0F43 /* choseCoinSound.mp3 */; };
 		DDC338522D3E9F9D006539AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338512D3E9F9D006539AC /* ViewController.swift */; };
 		DDC338542D3E9FE6006539AC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338532D3E9FE6006539AC /* Coordinator.swift */; };
 		DDC338562D3EA00B006539AC /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338552D3EA00B006539AC /* Loading.swift */; };
 		DDC338582D3EA43A006539AC /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338572D3EA43A006539AC /* Background.swift */; };
 		DDC3385A2D3EA51F006539AC /* SizeExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC338592D3EA51F006539AC /* SizeExtention.swift */; };
-		DDEE64622D41C674000F1CA6 /* levelDoneSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64612D41C674000F1CA6 /* levelDoneSound.mp3 */; };
 		DDEE64642D41C69A000F1CA6 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE64632D41C69A000F1CA6 /* SoundManager.swift */; };
 		DDEE646C2D41C74A000F1CA6 /* rollSound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64652D41C74A000F1CA6 /* rollSound4.mp3 */; };
 		DDEE646D2D41C74A000F1CA6 /* rollSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64662D41C74A000F1CA6 /* rollSound2.mp3 */; };
 		DDEE646E2D41C74A000F1CA6 /* rollSound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64672D41C74A000F1CA6 /* rollSound3.mp3 */; };
 		DDEE646F2D41C74A000F1CA6 /* dropSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64682D41C74A000F1CA6 /* dropSound.mp3 */; };
 		DDEE64702D41C74A000F1CA6 /* rollSound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64692D41C74A000F1CA6 /* rollSound1.mp3 */; };
-		DDEE64712D41C74A000F1CA6 /* mainSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE646A2D41C74A000F1CA6 /* mainSound.mp3 */; };
-		DDEE64742D41CC81000F1CA6 /* failSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64732D41CC81000F1CA6 /* failSound.mp3 */; };
 		DDEE64762D41D164000F1CA6 /* buySound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDEE64752D41D164000F1CA6 /* buySound.mp3 */; };
 		DDFD01162D3DA7770055FEE4 /* BigFishFrenzyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */; };
 		DDFD011A2D3DA7780055FEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFD01192D3DA7780055FEE4 /* Assets.xcassets */; };
@@ -41,6 +55,9 @@
 /* Begin PBXFileReference section */
 		DD2624F62D41685500DF5EE3 /* CatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchView.swift; sourceTree = "<group>"; };
 		DD2624F82D41769400DF5EE3 /* TrophyRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyRoom.swift; sourceTree = "<group>"; };
+		DD582D4D2D42C7C60026E1D7 /* levelDone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelDone.mp3; sourceTree = "<group>"; };
+		DD582D4F2D42C8740026E1D7 /* mainMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainMusic.mp3; sourceTree = "<group>"; };
+		DD582D512D42C8B30026E1D7 /* lineBrokeSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lineBrokeSound.mp3; sourceTree = "<group>"; };
 		DD638BE72D3FEEA8005812B0 /* RammettoOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RammettoOne-Regular.ttf"; sourceTree = "<group>"; };
 		DD638BE92D3FEEC0005812B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DD638BEA2D3FF003005812B0 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
@@ -51,20 +68,31 @@
 		DD638BF62D403005005812B0 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		DD638BF82D406370005812B0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		DD638BFA2D406A55005812B0 /* ShipAndFisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipAndFisher.swift; sourceTree = "<group>"; };
+		DDBD7FA82D6F3F88006C0F43 /* Pirates coming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pirates coming.swift"; sourceTree = "<group>"; };
+		DDBD7FAA2D6F4507006C0F43 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
+		DDBD7FAC2D6F5633006C0F43 /* YouWinPirates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouWinPirates.swift; sourceTree = "<group>"; };
+		DDBD7FAE2D6F5BAB006C0F43 /* RPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS.swift; sourceTree = "<group>"; };
+		DDBD7FB02D6F62BE006C0F43 /* PiratesWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiratesWin.swift; sourceTree = "<group>"; };
+		DDBD7FB22D6F6928006C0F43 /* CoinGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGame.swift; sourceTree = "<group>"; };
+		DDBD7FB42D6F7151006C0F43 /* piratesSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piratesSound1.mp3; sourceTree = "<group>"; };
+		DDBD7FB62D6F715B006C0F43 /* piratesLostSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piratesLostSound.mp3; sourceTree = "<group>"; };
+		DDBD7FB72D6F715B006C0F43 /* piratesWinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piratesWinSound.mp3; sourceTree = "<group>"; };
+		DDBD7FBA2D6F721F006C0F43 /* xoSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xoSound1.mp3; sourceTree = "<group>"; };
+		DDBD7FBC2D6F721F006C0F43 /* xoSound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xoSound3.mp3; sourceTree = "<group>"; };
+		DDBD7FBD2D6F721F006C0F43 /* xoSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xoSound2.mp3; sourceTree = "<group>"; };
+		DDBD7FC22D6F746D006C0F43 /* coinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coinSound.mp3; sourceTree = "<group>"; };
+		DDBD7FC32D6F746D006C0F43 /* choseCoinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = choseCoinSound.mp3; sourceTree = "<group>"; };
 		DDC338512D3E9F9D006539AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDC338532D3E9FE6006539AC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DDC338552D3EA00B006539AC /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		DDC338572D3EA43A006539AC /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		DDC338592D3EA51F006539AC /* SizeExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeExtention.swift; sourceTree = "<group>"; };
-		DDEE64612D41C674000F1CA6 /* levelDoneSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelDoneSound.mp3; sourceTree = "<group>"; };
 		DDEE64632D41C69A000F1CA6 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		DDEE64652D41C74A000F1CA6 /* rollSound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollSound4.mp3; sourceTree = "<group>"; };
 		DDEE64662D41C74A000F1CA6 /* rollSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollSound2.mp3; sourceTree = "<group>"; };
 		DDEE64672D41C74A000F1CA6 /* rollSound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollSound3.mp3; sourceTree = "<group>"; };
 		DDEE64682D41C74A000F1CA6 /* dropSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dropSound.mp3; sourceTree = "<group>"; };
 		DDEE64692D41C74A000F1CA6 /* rollSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollSound1.mp3; sourceTree = "<group>"; };
-		DDEE646A2D41C74A000F1CA6 /* mainSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainSound.mp3; sourceTree = "<group>"; };
-		DDEE64732D41CC81000F1CA6 /* failSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = failSound.mp3; sourceTree = "<group>"; };
 		DDEE64752D41D164000F1CA6 /* buySound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buySound.mp3; sourceTree = "<group>"; };
 		DDFD01122D3DA7770055FEE4 /* BigFishFrenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigFishFrenzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFishFrenzyApp.swift; sourceTree = "<group>"; };
@@ -84,6 +112,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDBD7FA72D6F3F3B006C0F43 /* Pirates Game */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD7FA82D6F3F88006C0F43 /* Pirates coming.swift */,
+				DDBD7FAA2D6F4507006C0F43 /* TicTacToe.swift */,
+				DDBD7FAE2D6F5BAB006C0F43 /* RPS.swift */,
+				DDBD7FB22D6F6928006C0F43 /* CoinGame.swift */,
+				DDBD7FAC2D6F5633006C0F43 /* YouWinPirates.swift */,
+				DDBD7FB02D6F62BE006C0F43 /* PiratesWin.swift */,
+			);
+			path = "Pirates Game";
+			sourceTree = "<group>";
+		};
 		DDC3384A2D3E9F25006539AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +142,7 @@
 		DDC3384B2D3E9F2C006539AC /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				DDBD7FA72D6F3F3B006C0F43 /* Pirates Game */,
 				DDC338512D3E9F9D006539AC /* ViewController.swift */,
 				DDC338572D3EA43A006539AC /* Background.swift */,
 				DD638BFA2D406A55005812B0 /* ShipAndFisher.swift */,
@@ -145,15 +187,23 @@
 		DDC338502D3E9F55006539AC /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				DDBD7FC32D6F746D006C0F43 /* choseCoinSound.mp3 */,
+				DDBD7FC22D6F746D006C0F43 /* coinSound.mp3 */,
+				DDBD7FBA2D6F721F006C0F43 /* xoSound1.mp3 */,
+				DDBD7FBD2D6F721F006C0F43 /* xoSound2.mp3 */,
+				DDBD7FBC2D6F721F006C0F43 /* xoSound3.mp3 */,
+				DDBD7FB62D6F715B006C0F43 /* piratesLostSound.mp3 */,
+				DDBD7FB72D6F715B006C0F43 /* piratesWinSound.mp3 */,
+				DDBD7FB42D6F7151006C0F43 /* piratesSound1.mp3 */,
 				DDEE64752D41D164000F1CA6 /* buySound.mp3 */,
-				DDEE64732D41CC81000F1CA6 /* failSound.mp3 */,
+				DD582D4F2D42C8740026E1D7 /* mainMusic.mp3 */,
 				DDEE64682D41C74A000F1CA6 /* dropSound.mp3 */,
-				DDEE646A2D41C74A000F1CA6 /* mainSound.mp3 */,
+				DD582D512D42C8B30026E1D7 /* lineBrokeSound.mp3 */,
 				DDEE64692D41C74A000F1CA6 /* rollSound1.mp3 */,
 				DDEE64662D41C74A000F1CA6 /* rollSound2.mp3 */,
+				DD582D4D2D42C7C60026E1D7 /* levelDone.mp3 */,
 				DDEE64672D41C74A000F1CA6 /* rollSound3.mp3 */,
 				DDEE64652D41C74A000F1CA6 /* rollSound4.mp3 */,
-				DDEE64612D41C674000F1CA6 /* levelDoneSound.mp3 */,
 				DDEE64632D41C69A000F1CA6 /* SoundManager.swift */,
 			);
 			path = Sounds;
@@ -260,17 +310,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDBD7FC52D6F746D006C0F43 /* choseCoinSound.mp3 in Resources */,
 				DDEE646E2D41C74A000F1CA6 /* rollSound3.mp3 in Resources */,
-				DDEE64742D41CC81000F1CA6 /* failSound.mp3 in Resources */,
 				DDEE646F2D41C74A000F1CA6 /* dropSound.mp3 in Resources */,
+				DDBD7FC42D6F746D006C0F43 /* coinSound.mp3 in Resources */,
 				DDEE646D2D41C74A000F1CA6 /* rollSound2.mp3 in Resources */,
+				DDBD7FB82D6F715B006C0F43 /* piratesLostSound.mp3 in Resources */,
+				DDBD7FB52D6F7151006C0F43 /* piratesSound1.mp3 in Resources */,
+				DDBD7FC12D6F721F006C0F43 /* xoSound2.mp3 in Resources */,
 				DDEE646C2D41C74A000F1CA6 /* rollSound4.mp3 in Resources */,
+				DD582D502D42C8740026E1D7 /* mainMusic.mp3 in Resources */,
+				DD582D4E2D42C7C60026E1D7 /* levelDone.mp3 in Resources */,
 				DDFD011E2D3DA7780055FEE4 /* Preview Assets.xcassets in Resources */,
-				DDEE64712D41C74A000F1CA6 /* mainSound.mp3 in Resources */,
+				DDBD7FB92D6F715B006C0F43 /* piratesWinSound.mp3 in Resources */,
 				DD638BE82D3FEEA8005812B0 /* RammettoOne-Regular.ttf in Resources */,
+				DDBD7FBE2D6F721F006C0F43 /* xoSound1.mp3 in Resources */,
+				DDBD7FC02D6F721F006C0F43 /* xoSound3.mp3 in Resources */,
+				DD582D522D42C8B30026E1D7 /* lineBrokeSound.mp3 in Resources */,
 				DDFD011A2D3DA7780055FEE4 /* Assets.xcassets in Resources */,
 				DDEE64702D41C74A000F1CA6 /* rollSound1.mp3 in Resources */,
-				DDEE64622D41C674000F1CA6 /* levelDoneSound.mp3 in Resources */,
 				DDEE64762D41D164000F1CA6 /* buySound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,13 +341,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2624F72D41685500DF5EE3 /* CatchView.swift in Sources */,
+				DDBD7FAD2D6F5633006C0F43 /* YouWinPirates.swift in Sources */,
 				DD638BF52D40172E005812B0 /* Madel.swift in Sources */,
+				DDBD7FB12D6F62BE006C0F43 /* PiratesWin.swift in Sources */,
 				DDC338542D3E9FE6006539AC /* Coordinator.swift in Sources */,
+				DDBD7FAB2D6F4507006C0F43 /* TicTacToe.swift in Sources */,
 				DDC338522D3E9F9D006539AC /* ViewController.swift in Sources */,
 				DD638BF92D406370005812B0 /* Game.swift in Sources */,
+				DDBD7FB32D6F6928006C0F43 /* CoinGame.swift in Sources */,
 				DD638BFB2D406A56005812B0 /* ShipAndFisher.swift in Sources */,
+				DDBD7FA92D6F3F88006C0F43 /* Pirates coming.swift in Sources */,
 				DD638BF72D403005005812B0 /* Shop.swift in Sources */,
 				DD638BEF2D3FFC6F005812B0 /* Menu.swift in Sources */,
+				DDBD7FAF2D6F5BAB006C0F43 /* RPS.swift in Sources */,
 				DD638BF32D4013B6005812B0 /* Guidebook.swift in Sources */,
 				DDC338562D3EA00B006539AC /* Loading.swift in Sources */,
 				DDC3385A2D3EA51F006539AC /* SizeExtention.swift in Sources */,

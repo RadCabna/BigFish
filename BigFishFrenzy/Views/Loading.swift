@@ -119,9 +119,9 @@ struct Loading: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 hookAnimation()
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.7) {
-                coordinator.navigate(to: .main)
-            }
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.7) {
+//                coordinator.navigate(to: .main)
+//            }
         }
         .onChange(of: level) { _ in
             if level {
