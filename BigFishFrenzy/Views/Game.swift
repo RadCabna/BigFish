@@ -52,9 +52,9 @@ struct Game: View {
                 )
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                 .padding(.top)
-                .onTapGesture {
-                    gameStage = 5
-                }
+//                .onTapGesture {
+//                    gameStage = 5
+//                }
             ShipAndFisher(shipNumber: selectedShopItemsArray[0],canWeTap: canWeTap, floatInTheWater: $floatInTheWater)
             
                 .onTapGesture {
