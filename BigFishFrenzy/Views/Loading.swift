@@ -114,14 +114,10 @@ struct Loading: View {
             }
         }
         .onAppear{
-//            AppDelegate().setOrientation(to: .landscapeLeft)
             loadingBarAnimation()
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 hookAnimation()
             }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.7) {
-//                coordinator.navigate(to: .main)
-//            }
         }
         .onChange(of: level) { _ in
             if level {

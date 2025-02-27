@@ -24,7 +24,6 @@ class AppDelegate: NSObject {
     private var validationPerformed = false
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-//        AppDelegate.orientationLock = .all
         if !validationPerformed {
             validation()
             validationPerformed = true

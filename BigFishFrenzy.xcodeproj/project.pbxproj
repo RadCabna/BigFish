@@ -82,6 +82,7 @@
 		DDBD7FBD2D6F721F006C0F43 /* xoSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xoSound2.mp3; sourceTree = "<group>"; };
 		DDBD7FC22D6F746D006C0F43 /* coinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coinSound.mp3; sourceTree = "<group>"; };
 		DDBD7FC32D6F746D006C0F43 /* choseCoinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = choseCoinSound.mp3; sourceTree = "<group>"; };
+		DDBD7FC62D707E9E006C0F43 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DDC338512D3E9F9D006539AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDC338532D3E9FE6006539AC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DDC338552D3EA00B006539AC /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
@@ -94,7 +95,7 @@
 		DDEE64682D41C74A000F1CA6 /* dropSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dropSound.mp3; sourceTree = "<group>"; };
 		DDEE64692D41C74A000F1CA6 /* rollSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rollSound1.mp3; sourceTree = "<group>"; };
 		DDEE64752D41D164000F1CA6 /* buySound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buySound.mp3; sourceTree = "<group>"; };
-		DDFD01122D3DA7770055FEE4 /* BigFishFrenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigFishFrenzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFD01122D3DA7770055FEE4 /* Big Fish Frenzy Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Fish Frenzy Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFishFrenzyApp.swift; sourceTree = "<group>"; };
 		DDFD01192D3DA7780055FEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDFD011B2D3DA7780055FEE4 /* BigFishFrenzy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BigFishFrenzy.entitlements; sourceTree = "<group>"; };
@@ -220,7 +221,7 @@
 		DDFD01132D3DA7770055FEE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDFD01122D3DA7770055FEE4 /* BigFishFrenzy.app */,
+				DDFD01122D3DA7770055FEE4 /* Big Fish Frenzy Game.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				DD638BE92D3FEEC0005812B0 /* Info.plist */,
+				DDBD7FC62D707E9E006C0F43 /* PrivacyInfo.xcprivacy */,
 				DDFD01152D3DA7770055FEE4 /* BigFishFrenzyApp.swift */,
 				DDC3384A2D3E9F25006539AC /* Views */,
 				DDC3384B2D3E9F2C006539AC /* SubViews */,
@@ -269,7 +271,7 @@
 			);
 			name = BigFishFrenzy;
 			productName = BigFishFrenzy;
-			productReference = DDFD01122D3DA7770055FEE4 /* BigFishFrenzy.app */;
+			productReference = DDFD01122D3DA7770055FEE4 /* Big Fish Frenzy Game.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -492,7 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BigFishFrenzy/Preview Content\"";
-				DEVELOPMENT_TEAM = TJC4VDAK2F;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -511,8 +513,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = f1.BigFishFrenzy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigfishf.renzy;
+				PRODUCT_NAME = "Big Fish Frenzy Game";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -531,7 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BigFishFrenzy/Preview Content\"";
-				DEVELOPMENT_TEAM = TJC4VDAK2F;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -550,8 +552,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = f1.BigFishFrenzy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigfishf.renzy;
+				PRODUCT_NAME = "Big Fish Frenzy Game";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
