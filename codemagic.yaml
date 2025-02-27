@@ -13,8 +13,8 @@ workflows:
           - certificate_credentials # <-- (CERTIFICATE_PRIVATE_KEY - Put your Certificate Private Key here)
           #- other
         vars:
-          XCODE_PROJECT: "Big Fish Frenzy Game.xcodeproj" # <-- Put the name of your workspace here.
-          XCODE_SCHEME: "Big Fish Frenzy Game" # <-- Put the name of your scheme here.
+          XCODE_PROJECT: "BigFishFrenzy.xcodeproj" # <-- Put the name of your workspace here.
+          XCODE_SCHEME: "BigFishFrenzy" # <-- Put the name of your scheme here.
           BUNDLE_ID: "com.bigfishf.renzy" # <-- Put your Bundle Id here.
           APP_STORE_APPLE_ID: 6742113288 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
         xcode: latest # <-- set to specific version e.g. 14.3, 15.0 to avoid unexpected updates.
