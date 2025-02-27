@@ -61,7 +61,7 @@ class AppDelegate: NSObject {
     }
     
     func showAds() {
-        AppDelegate().setOrientation(to: .unknown)
+        AppDelegate.orientationLock = .all
         DispatchQueue.main.async {
             if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                let rootViewController = windowScene.windows.first?.rootViewController {
@@ -75,12 +75,14 @@ class AppDelegate: NSObject {
     }
     
     func showGame() {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            AppDelegate().setOrientation(to: .landscapeLeft)
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
             self.level = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 self.level = false
             }
-//            AppDelegate.orientationLock = .portrait
         }
         print("yo1")
     }
@@ -88,11 +90,6 @@ class AppDelegate: NSObject {
 }
 
 extension AppDelegate: UIApplicationDelegate {
-
-//    func application1(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-//        return AppDelegate.orientationLock
-//
-//    }
     
     func setOrientation(to orientation: UIInterfaceOrientation) {
         switch orientation {
@@ -102,6 +99,8 @@ extension AppDelegate: UIApplicationDelegate {
             AppDelegate.orientationLock = .landscapeRight
         case .landscapeLeft:
             AppDelegate.orientationLock = .landscapeLeft
+        case .portraitUpsideDown:
+            AppDelegate.orientationLock = .portraitUpsideDown
         default:
             AppDelegate.orientationLock = .all
         }
